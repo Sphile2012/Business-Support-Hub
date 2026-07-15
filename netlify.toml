@@ -1,7 +1,7 @@
 [build]
   base = "artifacts/lloyd-it-support"
   publish = "dist/public"
-  command = "npm run build"
+  command = "pnpm run build"
 
 [[redirects]]
   from = "/*"

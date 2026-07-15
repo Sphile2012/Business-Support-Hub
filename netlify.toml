@@ -1,7 +1,6 @@
 [build]
-  base = "artifacts/lloyd-it-support"
-  publish = "dist/public"
-  command = "pnpm run build"
+  command = "cd artifacts/lloyd-it-support && pnpm install && pnpm run build"
+  publish = "artifacts/lloyd-it-support/dist/public"
 
 [build.environment]
   NODE_VERSION = "20.19.0"

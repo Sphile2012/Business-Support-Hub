@@ -80,9 +80,9 @@ export function Hero() {
             <motion.div 
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-8 top-20 bg-background border-2 border-foreground p-4 flex items-center gap-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              className="hidden sm:flex absolute left-2 top-16 lg:left-4 bg-background border-2 border-foreground p-4 items-center gap-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] whitespace-nowrap"
             >
-              <Server className="text-primary" />
+              <Server className="text-primary shrink-0" />
               <div className="flex flex-col">
                 <span className="font-mono text-xs font-bold">Systems</span>
                 <span className="text-xs text-muted-foreground">Optimized</span>
@@ -92,9 +92,9 @@ export function Hero() {
             <motion.div 
               animate={{ y: [0, 15, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -right-8 bottom-32 bg-background border-2 border-foreground p-4 flex items-center gap-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+              className="hidden sm:flex absolute right-2 bottom-24 lg:right-4 bg-background border-2 border-foreground p-4 items-center gap-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] whitespace-nowrap"
             >
-              <ShieldCheck className="text-primary" />
+              <ShieldCheck className="text-primary shrink-0" />
               <div className="flex flex-col">
                 <span className="font-mono text-xs font-bold">Security</span>
                 <span className="text-xs text-muted-foreground">Hardened</span>

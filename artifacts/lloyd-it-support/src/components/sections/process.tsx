@@ -86,8 +86,8 @@ export function Process() {
                       {step.description}
                     </p>
                     {/* Decorative element */}
-                    <div className={`absolute top-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300 ${
-                      index % 2 === 0 ? 'left-0' : 'right-0 md:left-auto md:right-0 left-0'
+                    <div className={`absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300 ${
+                      index % 2 !== 0 ? 'md:left-auto md:right-0' : ''
                     }`} />
                   </div>
                 </div>

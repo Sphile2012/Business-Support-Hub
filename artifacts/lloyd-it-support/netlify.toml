@@ -1,0 +1,14 @@
+[build]
+  base = "artifacts/lloyd-it-support"
+  publish = "dist/public"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+  PORT = "5173"
+  BASE_PATH = "/"

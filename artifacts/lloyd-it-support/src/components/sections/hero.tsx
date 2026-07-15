@@ -1,10 +1,20 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Server, ShieldCheck, Database } from "lucide-react";
-import lloydImage from "@assets/loyd_1784084989069.jpeg";
+import cosmicImage from "@assets/cosmic-hero.jpg";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100dvh] pt-20 flex items-center bg-dot-pattern bg-background overflow-hidden" id="hero">
+    <section className="relative min-h-[100dvh] pt-20 flex items-center overflow-hidden" id="hero">
+      {/* Cosmic Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={cosmicImage} 
+          alt="Cosmic Technology Background" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/95" />
+      </div>
+
       <div className="container mx-auto px-6 relative z-10 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div 
@@ -66,9 +76,9 @@ export function Hero() {
             <div className="relative w-full h-full max-h-[600px] border-2 border-foreground overflow-hidden bg-muted group">
               <div className="absolute inset-0 bg-foreground/10 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-overlay" />
               <img 
-                src={lloydImage} 
+                src={cosmicImage} 
                 alt="Lloyd - IT Support Professional" 
-                className="w-full h-full object-cover object-center grayscale-[20%] contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-background/90 backdrop-blur border-t-2 border-foreground p-4 z-20 flex justify-between items-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                 <span className="font-mono text-sm font-bold uppercase">System Admin</span>
